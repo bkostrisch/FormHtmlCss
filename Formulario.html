@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Na head coloquei a referencia para meu arquivo css onde criei tudo do 0 e importei a biblioteca do bootstrap para edição da página -->
+<head>
+<link href="form.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Formulário em HTML</title>
+</head>
+
+<!-- Na body criei uma classe "background" para colocar a imagem de fundo -->
+<body class="background">
+<!-- Título do Formulário -->
+<h1 class="text-center titulo">Mulheres no e-Sports</h1>
+<!-- Utilizei uma div para agrupar tudo que estaria dentro do formulário nela, colocar em um card e centralizar tudo de uma forma mais prática com a classe "centralizar" que criei no css -->
+<div class="col-md-4 centralizar card">
+<form name="form" action="" method="post">
+<!-- Essa outra div foi serve para "identar" o conteúdo do card para que não fiquem desorganizados dentro dele, por isso a classe "card-body" foi utilizada -->
+<div class="card-body form-group">
+<!-- Coloquei cada input dentro de uma div para facilitar a organização em partes do conteúdo da tela e do código, utilizei inputs padrões para guardar informações e a classe "rounded-input" que criei para estilizar deixando-as mais arredondadas e coloridas -->
+	<div class="mt-2">
+	<label>Nome Completo: </label>
+	<input class="col-md-9 rounded-input ml-6" type="text" name="nome"/>
+	</div>
+	
+	<div class="mt-3">
+	<label>Data Nascimento: </label>
+	<input type="date" class="rounded-input" name="dataNasc"/>
+	</div>
+	
+	<div class="mt-3">
+	<label>Email: </label>
+	<input class="col-md-9 rounded-input ml-7" type="text" name="dataNasc"/>
+	</div>	
+	<!-- Aqui checkboxes foram utilizadas para multipla escolha e no fim foi colocada uma input normal com a classe "borderless" que criei para retirar a borda e padronizar com as cores da página, as classes pré-existentes mt/ml/mb/mr são utilizadas para ajustar as margens dos elementos da página -->
+	<label class="mt-7">Faz parte da comunidade de que jogos? </label>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="lol" name="lol">
+	<label class="custom-control-label" for="lol">League of Legends</label>
+	</div>	
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="dota" name="dota">
+	<label class="custom-control-label" for="dota">Dota 2</label>
+	</div>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="ow" name="ow">
+	<label class="custom-control-label" for="ow">Overwatch</label>
+	</div>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="cs" name="cs">
+	<label class="custom-control-label" for="cs">Counter Strike</label>
+	</div>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="tf" name="tf">
+	<label class="custom-control-label" for="tf">Team Forterss 2</label>
+	</div>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="pubg" name="pubg">
+	<label class="custom-control-label" for="pubg">PlayerUnknown's Battlegrounds</label>
+	</div>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="td" name="td">
+	<label class="custom-control-label" for="td">The Division</label>
+	</div>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="btf" name="btf">
+	<label class="custom-control-label" for="btf">Battlefield 1</label>
+	</div>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="rl" name="rl">
+	<label class="custom-control-label" for="rl">Rocket League</label>
+	</div>	
+	<label class="ml-4">Outros:</label><input class="col-md-8 borderless ml-2" type="text" name="dataNasc"/>
+	
+	
+	<label class="mt-7">Já sofreu algum tipo de discriminação em um desses jogos por ser mulher? </label>
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="sim" name="sim">
+	<label class="custom-control-label" for="sim">Sim</label>
+	</div>	
+	<div class="custom-radio mt-6 ml-4">	
+	<br><input type="checkbox" class="checkbox-automatic custom-control-input" id="nao" name="nao">
+	<label class="custom-control-label" for="nao">Não</label>
+	</div>		
+	<!-- Nessa parte foi utilizada a tag textarea para dar ao usuário liberdade de expressão ao compartilhar alguma experiência que pode ser grande, a classe "rounded-textarea" criada por mim também serve para padronização com os demais elementos da página -->
+	<label class="mt-7">Se sim e caso se sinta a vontade, compartilhe sua experiência conosco:</label>
+	<textarea class="col-md-12 mb-3 rounded-textarea"></textarea>
+	<!-- No lugar de um botão utilizei a tag "a" para poder redirecionar o usuário para a tela de agradecimento utilizando href -->
+	<a class="btn-enviar" href="Agradecimentos.html">Enviar</a>	
+</div>
+<!-- Footer para as pessoas saberem quem criou o formulário com href redirecionando a pessoa ao meu perfil no facebook com as classes "footer" e "facebook" criadas por mim-->
+<label class="footer">Formulário criado por: </label><a class="facebook ml-2" href="https://www.facebook.com/kostrisch">Bárbara Hedwig von Kostrisch</a>
+</form>
+
+</div>
+</body>
+</html>

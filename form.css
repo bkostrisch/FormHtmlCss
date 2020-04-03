@@ -1,0 +1,142 @@
+.titulo{
+	font-family: Arial;
+	color: pink;
+	text-shadow: 2px 2px #ff3377;
+	font-size: 40px;
+	margin-top: 2%;
+}
+
+.background{
+	
+	background-image: url(Background.png);
+	background-repeat: no-repeat;
+	background-size: 100%;	
+	
+}
+
+.centralizar{
+	
+	margin: 2% 33.5%;
+	box-shadow: 2px 2px #808080;
+	border-radius: 50px!important;
+	
+}
+
+.rounded-input{
+	
+	border-radius: 8px;
+	box-shadow: 1px 1px;
+	
+}
+
+.borderless{
+
+	border: 0;
+	box-shadow: 0px 1px #ff3377;		
+}
+
+.rounded-textarea{
+	
+	border: 1px solid;
+	border-radius: 10px!important;
+	box-shadow: 1px 1px;
+
+}
+
+.btn-enviar{
+	
+	border: 1px solid;
+	border-radius: 10px;
+	margin-left: 30%;
+	color: #ff3377;
+	text-shadow: 1px 1px #e6ccff;
+	background-color: #ffe6ff;
+	padding: 0.5% 15%;
+	
+}
+
+.btn-enviar:hover{	
+	color: #ff0055!important;
+	text-shadow: 1px 1px #e6ccff!important;
+	background-color: #ff99bb!important;
+}
+
+input, textarea{
+	
+	color: #ff3377;
+	
+}
+
+input[type="checkbox"]:checked + label:after{
+  
+	background-color: #ff9999;
+	border-radius: 10px;
+	border-color: #ff3377;
+	
+}
+input[type="checkbox"]:checked + label:before{
+  
+	background-color: #ff9999;
+	border-radius: 10px;
+	border-color: #ff3377;
+	
+}
+
+.custom-control-input:checked + .custom-control-label::before{
+	
+	background-color: #ff9999!important;
+	border-color: #ff3377!important;
+}
+
+.footer{
+	
+	margin-left: 24.5%;
+	font-size: 12px;
+	color: #ff66b3;
+	
+}
+
+.footer-agradecimento{
+	
+	margin-left: 42%;
+	font-size: 12px;
+	color: #ff66b3;
+	
+}
+
+.facebook{
+	
+	font-size: 12px;
+	font-weight: bold;
+	color: #ff80bf;
+	
+}
+
+.facebook:hover{
+	
+	color: #cc0066!important;
+	
+}
+
+.ml-6{
+	
+	margin-left: 0.8%;
+	
+}
+
+.ml-7{
+	
+	margin-left: 15%;
+}
+
+.mt-6{
+
+	margin-top: -4%;
+
+}
+
+.mt-7{
+	
+	margin-top: 4%;
+	
+}
